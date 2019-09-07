@@ -21,7 +21,9 @@ Options:
 
 
 run_build() {
+  rm -f Gemfile.lock
   bundle exec middleman build --clean
+  rm -f Gemfile.lock
 }
 
 parse_args() {
